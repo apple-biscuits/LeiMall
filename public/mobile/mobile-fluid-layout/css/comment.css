@@ -1,0 +1,114 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 92px;
+    padding: 11px 26px 0 20px;
+    background-color: #fff;
+}
+
+.header span,
+.header i {
+    font-size: 41px;
+}
+
+.fd {
+    margin-right: 40px;
+}
+
+
+/* main start  */
+
+.main {
+    padding-bottom: 120px;
+}
+
+.commodity {
+    margin-top: 94px;
+    display: flex;
+    align-items: center;
+    height: 148px;
+    padding-left: 20px;
+    background-color: #fff;
+}
+
+.commodity-img {
+    width: 112px;
+    height: 114px;
+    margin-right: 25px;
+}
+
+.commodity-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.commodity-info {
+    font-size: 32px;
+    color: #101010;
+}
+
+
+/* comment-common start  */
+
+.comment-common {
+    display: flex;
+    margin-top: 20px;
+    padding: 22px 0 80px 66px;
+    background-color: #fff;
+}
+
+.comment-common-logo {
+    width: 64px;
+    height: 64px;
+}
+
+.comment-common-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.customer-info {
+    margin-left: 13px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    flex: 1;
+    line-height: 1;
+    font-size: 24px;
+    color: #101010;
+}
+
+.customer-info span:nth-child(2) {
+    margin: 25px 0 28px 0;
+    color: #FFC926;
+}
+
+.customer-info span:nth-child(2) i {
+    font-size: 24px;
+}
+
+.time {
+    padding: 24px 40px 0 0;
+    font-size: 24px;
+    font-family: Arial;
+    color: #B4B2B6;
+}
+
+
+/* footer start  */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}

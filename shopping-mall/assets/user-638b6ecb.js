@@ -1,0 +1,1 @@
+import{aR as a,C as s}from"./index-ce5e170b.js";const u=a("user",()=>{const o={userId:0,nickname:"未登录",avatarUrl:"/images/avatar/default.jpg"},e=s("userInfo",o);return{userInfo:e,addUserInfo:r=>{e.value=r.userInfo,window.localStorage.setItem("token",r.token)},removeUserInfo:()=>{e.value=o,window.localStorage.setItem("token","")}}});export{u};

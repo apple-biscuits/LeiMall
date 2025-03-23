@@ -1,0 +1,23 @@
+/* 自定义字体 */
+@font-face {
+  font-family: "PingFangSCRegular";
+  src: url("../fonts/PingFangSCRegular.ttf") format("truetype");
+}
+
+/* 使用继承性，给body标签设置字体 */
+body {
+  font: 14px/1.5 PingFangSCRegular, ArialMT, MicrosoftYaHei;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

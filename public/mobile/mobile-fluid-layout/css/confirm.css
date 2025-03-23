@@ -1,0 +1,263 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 32px 0 24px 0;
+    width: 100%;
+    height: 94px;
+    background-color: #fff;
+}
+
+.header span:nth-child(1) {
+    margin: 0 248px 0 34px;
+}
+
+.header span:nth-child(2) {
+    font-size: 36px;
+    color: #101010;
+}
+
+.back::before {
+    font-size: 36px;
+    color: #101010;
+}
+
+
+/* info satrt */
+
+.info {
+    margin-top: 96px;
+    line-height: 1;
+    font-size: 32px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #101010;
+    background-color: #fff;
+}
+
+.place {
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 36px 24px 33px;
+}
+
+.place .weizhi {
+    font-size: 36px;
+    color: #9D9E9D;
+}
+
+.place span {
+    flex: 1 1 auto;
+    margin: 0 62px 0 21px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.place .jiantou {
+    font-size: 36px;
+    color: #9D9E9D;
+}
+
+.place-ico,
+.customer-info {
+    background-color: #fff;
+    padding-left: 84px;
+}
+
+.customer-info {
+    display: flex;
+    align-items: center;
+    height: 116px;
+}
+
+.customer-info span:nth-child(1) {
+    margin-right: 20px;
+}
+
+.payment {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 102px;
+    font-size: 28px;
+    font-family: MicrosoftYaHei;
+    font-weight: 400;
+    color: #101010;
+    background-color: #fff;
+}
+
+.payment span:nth-child(1) {
+    margin-left: 22px;
+}
+
+.payment span:nth-child(2) {
+    margin-right: 37px;
+    width: 150px;
+    color: #9D9E9D;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* main start */
+
+.main {
+    padding-bottom: 386px;
+}
+
+
+/* express-common start */
+
+.express-common {
+    padding: 0 33px 0 22px;
+    background-color: #fff;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.express-common-title {
+    height: 122px;
+    line-height: 104px;
+    padding: 0 0 18px;
+    font-size: 24px;
+}
+
+.fresh {
+    float: left;
+    height: 100%;
+    width: 144px;
+}
+
+.logistics {
+    float: right;
+    height: 100%;
+    width: 351px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #0EB6FF;
+}
+
+.product-img {
+    width: 188px;
+    height: 162px;
+}
+
+.product-information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-describe {
+    flex: 1;
+    padding: 0 23px;
+    line-height: 1;
+}
+
+.weight {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-family: MicrosoftYaHei;
+    color: #101010;
+}
+
+.weight span:nth-child(1) {
+    font-weight: bold;
+}
+
+.product-describe .info {
+    font-size: 24px;
+    font-family: MicrosoftYaHei;
+    color: #9D9E9D;
+    padding-bottom: 40px;
+}
+
+.product-describe .info div:nth-child(1) {
+    margin-top: 29px;
+}
+
+.product-describe .info div:nth-child(2) {
+    margin-top: 17px;
+}
+
+.product-describe .info div:nth-child(3) {
+    margin-top: 20px;
+}
+
+
+/* footer satrt */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .fapaio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px 0 22px;
+    height: 96px;
+    font-size: 28px;
+    font-family: MicrosoftYaHei;
+    color: #9D9E9D;
+    background-color: #fff;
+}
+
+.footer .fapaio span:nth-child(1) {
+    flex: 1;
+    color: #101010;
+}
+
+.footer .fapaio a {
+    padding-right: 33px;
+}
+
+.footer .fapaio i {
+    font-size: 36px;
+}
+
+.dingdan {
+    margin-top: 20px;
+}
+
+.countant {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 156px;
+    padding-right: 28px;
+    font-size: 28px;
+    font-family: MicrosoftYaHei;
+    background-color: #fff;
+}
+
+.countant i {
+    margin: 0 29px 0 10px;
+    color: #CE5F41;
+}
+
+.buy {
+    width: 196px;
+    height: 80px;
+    background: #0EB6FF;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: #fff;
+}

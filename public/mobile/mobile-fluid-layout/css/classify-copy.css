@@ -1,0 +1,205 @@
+.search {
+  position: relative;
+  height: 10.667vw;
+  padding: 1.867vw 3.733vw 1.867vw 2.933vw;
+}
+
+.search i {
+  position: absolute;
+  top: 56%;
+  left: 7.6vw;
+  transform: translateY(-50%);
+  font-size: 3.2vw;
+  color: #9d9e9e;
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  padding-left: 8vw;
+  border-radius: 4vw;
+}
+
+.main {
+  display: flex;
+  padding-bottom: 13.6vw;
+}
+
+.main-nav ul li {
+  width: 22.4vw;
+  height: 13.333vw;
+}
+
+.main-nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 13.333vw;
+  text-align: center;
+  color: #101010;
+  font-size: 3.2vw;
+}
+
+.main-nav ul li a.active {
+  background-color: #fff;
+  color: #0eb6ff;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  height: 13.333vw;
+  background-color: #fff;
+}
+
+.select-card {
+  flex: 1;
+}
+
+.topbar a {
+  height: 6.667vw;
+  line-height: 6.667vw;
+  padding: 0 2.267vw;
+  background-color: #f5f5f5;
+  border-radius: 1.067vw;
+  font-size: 3.2vw;
+  color: #9d9d9d;
+}
+
+.topbar a.active {
+  background-color: #e6f7ff;
+  color: #0eb6ff;
+}
+
+.topbar a:nth-child(2) {
+  margin-left: 3.2vw;
+}
+
+.select-communal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.267vw;
+  height: 34.933vw;
+  padding: 4vw 3.733vw 4vw 2.267vw;
+  background-color: #fff;
+  line-height: 1;
+}
+
+.select-communal-img {
+  width: 25.067vw;
+  height: 21.6vw;
+}
+
+.select-communal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.select-communal-drec {
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.communal-drec-title {
+  font-size: 4.267vw;
+  color: #101010;
+}
+
+/* .communal-drec-info {
+    margin-top: 6.133vw;
+} */
+
+.communal-drec-info span:nth-child(1) {
+  margin-right: 1.333vw;
+  padding: 0 1.2vw 0 0.8vw;
+  font-size: 3.2vw;
+  color: #ce5f41;
+  border: 0.267vw solid #ce5f41;
+  border-radius: 1.067vw;
+}
+
+.communal-drec-info span:nth-child(2) {
+  padding: 0 2vw 0 1.6vw;
+  font-size: 3.2vw;
+  color: #9d9e9d;
+  border: 0.267vw solid #9d9e9d;
+  border-radius: 1.067vw;
+}
+
+.communal-drec-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.communal-drec-price span {
+  font-size: 3.2vw;
+  font-family: Arial;
+  color: #ce5f41;
+}
+
+.communal-drec-price span i {
+  color: #101010;
+  font-style: normal;
+}
+
+.communal-drec-card {
+  width: 5.867vw;
+  height: 5.867vw;
+  border-radius: 50%;
+  background-color: #0eb6ff;
+  font-size: 3.2vw;
+  text-align: center;
+  line-height: 5.867vw;
+  color: #fff;
+}
+
+.communal-drec-num {
+  margin: 3.6vw 0 4.533vw 0;
+  line-height: 1;
+  font-size: 3.2vw;
+  color: #9d9e9d;
+}
+
+/* footer start */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9.333vw;
+  width: 100%;
+  height: 13.333vw;
+  background-color: #fff;
+}
+
+.footer a {
+  display: flex;
+  flex-flow: column;
+  color: #9d9e9d;
+  align-items: center;
+}
+
+.footer a.active .icon,
+.footer a.active .title {
+  color: #0eb6ff;
+}
+
+.footer a .icon {
+  font-size: 5.733vw;
+}
+
+.footer a .title {
+  margin-top: -0.667vw;
+  font-size: 3.2vw;
+  color: #9d9e9d;
+  line-height: 1;
+}

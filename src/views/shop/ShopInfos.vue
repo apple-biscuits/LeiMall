@@ -1,0 +1,1 @@
+<template>ShopInfos.....</template>

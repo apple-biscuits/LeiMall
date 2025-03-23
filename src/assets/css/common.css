@@ -1,0 +1,50 @@
+p,
+ul,
+li,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.common-ellipsis {
+  white-space: nowrap; /* 文本不换行 */
+  overflow: hidden; /* 超出内容隐藏 */
+  text-overflow: ellipsis; /* 超出的内容文本省略号显示 */
+}
+/* 如何使用特殊字体 */
+@font-face {
+  font-family: 'PingFangSC-Heavy';
+  font-weight: 400;
+  src: url('../font/pingfang-heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  font-weight: 400;
+  src: url('../font/pingfangsc-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PingFangSC-Semibold';
+  font-weight: 400;
+  src: url('../font/pingfangsc-semibold.ttf') format('truetype');
+}
+
+body {
+  font:
+    12px/1 PingFangSC-Regular,
+    PingFang SC;
+  color: #818b98;
+}
+
+.common-wrap {
+  width: 323px;
+  min-height: 100px;
+  margin: 12px auto;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}

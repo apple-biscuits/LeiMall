@@ -1,0 +1,2 @@
+import { S as s } from "./index-ce5e170b.js"; 
+function t(e, d) { return s.get("/address", { params: { userId: e, addressId: d } }) } function a(e) { return s.post("/address", e) } function n(e) { return s.put("/address", e) } function u(e, d) { return s.delete("/address", { data: { userId: e, addressId: d } }) } function o(e) { return s.get("/address/default", { params: { userId: e } }) } export { t as a, a as b, u as d, o as g, n as u };

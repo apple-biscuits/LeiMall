@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>响应式后台管理</title>
+    <link rel="stylesheet" href="css/basic.css" />
+    <link rel="stylesheet" href="iconfont/iconfont.css" />
+    <script src="js/jquery.js"></script>
+  </head>
+  <body>
+    <!--1、写顶部的导航条区块，然后变成响应式-->
+    <div class="top">
+      <div class="top-nav common-bg">
+        <div class="logo"><img src="images/logo.png" alt="" /></div>
+        <ul class="clearfix">
+          <li><a href="#">概况</a></li>
+          <li><a href="#">教务</a></li>
+          <li><a href="#">营销</a></li>
+          <li><a href="#">运销</a></li>
+          <li><a href="#">用户</a></li>
+          <li><a href="#">交易</a></li>
+        </ul>
+        <span class="iconfont icon-lanmu"></span>
+      </div>
+    </div>
+
+    <!--左侧菜单开始-->
+    <div class="side common-bg">
+      <div class="side-bar current">
+        <h3><span class="iconfont icon-jiaoxuepingjia"></span>教学管理</h3>
+        <ul style="display: block">
+          <li><a href="#">班级管理</a></li>
+          <li><a href="#">直播管理</a></li>
+          <li><a href="#">课程管理</a></li>
+          <li><a href="#">题库管理</a></li>
+          <li><a href="#">分类标签</a></li>
+        </ul>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-zhujiao"></span>助学管理</h3>
+        <ul>
+          <li><a href="#">问答管理</a></li>
+          <li><a href="#">话题管理</a></li>
+          <li><a href="#">评价管理</a></li>
+          <li><a href="#">笔记管理</a></li>
+        </ul>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-yingxiao"></span>营销管理</h3>
+        <ul>
+          <li><a href="#">邀请管理</a></li>
+          <li><a href="#">兑换码</a></li>
+          <li><a href="#">优惠券</a></li>
+          <li><a href="#">会员管理</a></li>
+          <li><a href="#">微营销</a></li>
+        </ul>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-yonghu"></span>用户管理</h3>
+        <ul>
+          <li><a href="#">问答管理</a></li>
+          <li><a href="#">话题管理</a></li>
+          <li><a href="#">评价管理</a></li>
+          <li><a href="#">笔记管理</a></li>
+        </ul>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-dingdanyichenggong"></span>订单管理</h3>
+        <ul>
+          <li><a href="#">商品订单</a></li>
+          <li><a href="#">退款订单</a></li>
+        </ul>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-fapiao"></span>数据分析</h3>
+        <ul>
+          <li><a href="#">邀请管理</a></li>
+          <li><a href="#">兑换码</a></li>
+          <li><a href="#">优惠券</a></li>
+          <li><a href="#">会员管理</a></li>
+          <li><a href="#">微营销</a></li>
+        </ul>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-yunying"></span>运营</h3>
+      </div>
+      <div class="side-bar">
+        <h3><span class="iconfont icon-tubiao_qudao"></span>渠道管理</h3>
+      </div>
+      <div class="close iconfont icon-youjiantou"></div>
+    </div>
+    <!--左侧菜单结束-->
+    <div class="main">
+      <!--2、主体内容响应式-->
+      <div class="main-top clearfix">
+        <div class="item w25 col-xl-6 col-md-12">
+          <div class="item-con common-bg">
+            <h3 class="h-common">最新学员</h3>
+            <p>
+              <font id="totalPrice" data-value="250">250</font
+              ><span>最后一周数据</span>
+            </p>
+            <a href="#">查看详情</a>
+          </div>
+        </div>
+        <div class="item w25 col-xl-6 col-md-12">
+          <div class="item-con common-bg">
+            <h3 class="h-common">订单</h3>
+            <p>
+              <font id="totalOrder" data-value="852">852</font
+              ><span>未支付订单</span>
+            </p>
+            <a href="#">查看详情</a>
+          </div>
+        </div>
+        <div class="item w25 col-xl-6 col-md-12">
+          <div class="item-con common-bg">
+            <h3 class="h-common">当月利润</h3>
+            <p>
+              <font id="monthsPrice" data-value="48596">48596</font
+              ><span>截至到昨天</span>
+            </p>
+            <a href="#">查看详情</a>
+          </div>
+        </div>
+        <div class="item w25 col-xl-6 col-md-12">
+          <div class="item-con common-bg">
+            <h3 class="h-common">快到期学员</h3>
+            <p>
+              <font id="monthsOrder" data-value="652">652</font
+              ><span>最后一周数据</span>
+            </p>
+            <a href="#">查看详情</a>
+          </div>
+        </div>
+      </div>
+
+      <!--3、主体响应式-->
+      <div class="main-con clearfix">
+        <div class="main-orders col-xx-8 col-lg-12">
+          <div class="item common-bg">
+            <h3 class="h-common">最新报名学员</h3>
+            <table>
+              <tr>
+                <th class="min2">顾客</th>
+                <th class="max">产品</th>
+                <th>发票</th>
+                <th>价格</th>
+                <th class="min">状态</th>
+              </tr>
+              <tr>
+                <td><img src="images/tx1.svg" width="50" alt="" />张三</td>
+                <td>web前端体系课程</td>
+                <td>已开</td>
+                <td>7880</td>
+                <td>已发货</td>
+              </tr>
+              <tr>
+                <td><img src="images/tx2.svg" width="50" alt="" />李四</td>
+                <td>web前端0基础到实战</td>
+                <td>已开</td>
+                <td>7880</td>
+                <td>已发货</td>
+              </tr>
+              <tr>
+                <td><img src="images/tx1.svg" alt="" />小丽</td>
+                <td>javascript系列课程</td>
+                <td>已开</td>
+                <td>7880</td>
+                <td>已发货</td>
+              </tr>
+              <tr>
+                <td><img src="images/tx2.svg" alt="" />小红</td>
+                <td>css 6大主流布局</td>
+                <td>已开</td>
+                <td>7880</td>
+                <td>已发货</td>
+              </tr>
+              <tr>
+                <td><img src="images/tx2.svg" width="50" alt="" />八戒</td>
+                <td>移动WebApp开发课程</td>
+                <td>已开</td>
+                <td>7880</td>
+                <td>已发货</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="main-media main-common col-xx-4 col-lg-12">
+          <div class="item common-bg">
+            <h3 class="h-common">热门课程</h3>
+            <ul>
+              <li>
+                <div class="icon icon-bg1 mark1 iconfont icon-css"></div>
+                <div class="con">
+                  <p>css 6大主流布局技术</p>
+                  <span>报名人:12344</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg2 mark1 iconfont icon-js"></div>
+                <div class="con">
+                  <p>Javascript基础入门到实战</p>
+                  <span>报名人:166344</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg3 mark1 iconfont icon-vuejs"></div>
+                <div class="con">
+                  <p>Vue基础到实战</p>
+                  <span>报名人：34432</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg4 mark1 iconfont icon-react"></div>
+                <div class="con">
+                  <p>React入门到精通</p>
+                  <span>报名人：4222</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg2 mark1 iconfont icon-yidongduan"></div>
+                <div class="con">
+                  <p>移动端WebAPP开发</p>
+                  <span>报名人数：2333</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--3、主体响应式-->
+      <div class="main-con clearfix">
+        <div class="main-news main-common col-lg-6 col-md-12">
+          <div class="item common-bg" style="overflow: hidden">
+            <h3 class="h-common">站长公告</h3>
+            <img src="images/gg.jpg" alt="" width="100%" />
+            <p>
+              艾编程，互联网在线教育学习平台，目前主要涉及java进阶高级架构师的课程，web前端工程师等系列课程。
+            </p>
+          </div>
+        </div>
+        <div class="main-entry col-lg-6 col-md-12">
+          <div class="item common-bg">
+            <h3 class="h-common">常用入口</h3>
+            <ul>
+              <li>
+                <i class="icon icon-bg1 iconfont icon-jiaoxuepingjia"></i
+                >课程管理
+              </li>
+              <li>
+                <i class="icon icon-bg2 iconfont icon-yonghu"></i>班级管理
+              </li>
+              <li>
+                <i class="icon icon-bg3 iconfont icon-qianqian"></i>优惠券
+              </li>
+              <li>
+                <i class="icon icon-bg4 iconfont icon-zhujiao"></i>会员管理
+              </li>
+              <li>
+                <i class="icon icon-bg2 iconfont icon-tubiao_qudao"></i>web装修
+              </li>
+              <li><i class="icon icon-bg3 iconfont icon-ren"></i>用户管理</li>
+              <li>
+                <i class="icon icon-bg4 iconfont icon-dingdan"></i>商品订单
+              </li>
+              <li><i class="icon icon-bg1 iconfont icon-yunying"></i>公开课</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--4、主体响应式开始-->
+      <div class="main-con clearfix">
+        <div class="main-common col-lg-6 col-md-12">
+          <div class="item common-bg">
+            <h3 class="h-common">课程交易金额</h3>
+            <ul>
+              <li>
+                <div class="icon icon-bg1 mark1 iconfont icon-css"></div>
+                <div class="con">
+                  <p>css 6大主流布局技术</p>
+                  <span class="col">$12344</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg2 mark1 iconfont icon-js"></div>
+                <div class="con">
+                  <p>Javascript基础入门到实战</p>
+                  <span class="col">$166344</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg3 mark1 iconfont icon-vuejs"></div>
+                <div class="con">
+                  <p>Vue基础到实战</p>
+                  <span class="col">$34432.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg4 mark1 iconfont icon-react"></div>
+                <div class="con">
+                  <p>React入门到精通</p>
+                  <span class="col">$4222.00</span>
+                </div>
+              </li>
+              <li>
+                <div class="icon icon-bg2 mark1 iconfont icon-yidongduan"></div>
+                <div class="con">
+                  <p>移动端WebAPP开发</p>
+                  <span class="col">$32222.00</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-common col-lg-6 col-md-12">
+          <div class="item common-bg">
+            <h3 class="h-common">数据分析</h3>
+            <div id="main1" style="height: 90%"></div>
+          </div>
+        </div>
+        <div class="main-common col-lg-12">
+          <div class="item common-bg">
+            <h3 class="h-common">交易平台</h3>
+            <div id="main2" style="height: 90%"></div>
+          </div>
+        </div>
+      </div>
+      <!--4、主体响应式结束-->
+    </div>
+    <div class="footer">网站版权:艾编程</div>
+
+    <script src="js/menu.js"></script>
+    <script src="js/echarts.js"></script>
+    <script type="text/javascript">
+      // 基于准备好的dom，初始化echarts实例
+      var myChart1 = echarts.init(document.getElementById("main1"));
+      var myChart2 = echarts.init(document.getElementById("main2"));
+
+      // 指定图表的配置项和数据
+      option1 = {
+        title: {
+          text: "",
+        },
+        tooltip: {
+          trigger: "axis",
+          axisPointer: {
+            type: "cross",
+            label: {
+              backgroundColor: "#6a7985",
+            },
+          },
+        },
+        legend: {
+          data: ["Email", "Union Ads", "Video Ads", "Direct", "Search Engine"],
+        },
+        toolbox: {
+          feature: {
+            saveAsImage: {},
+          },
+        },
+        grid: {
+          left: "3%",
+          right: "4%",
+          bottom: "3%",
+          containLabel: true,
+        },
+        xAxis: [
+          {
+            type: "category",
+            boundaryGap: false,
+            data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+          },
+        ],
+        yAxis: [
+          {
+            type: "value",
+          },
+        ],
+        series: [
+          {
+            name: "Email",
+            type: "line",
+            stack: "Total",
+            areaStyle: {},
+            emphasis: {
+              focus: "series",
+            },
+            data: [120, 132, 101, 134, 90, 230, 210],
+          },
+          {
+            name: "Union Ads",
+            type: "line",
+            stack: "Total",
+            areaStyle: {},
+            emphasis: {
+              focus: "series",
+            },
+            data: [220, 182, 191, 234, 290, 330, 310],
+          },
+          {
+            name: "Video Ads",
+            type: "line",
+            stack: "Total",
+            areaStyle: {},
+            emphasis: {
+              focus: "series",
+            },
+            data: [150, 232, 201, 154, 190, 330, 410],
+          },
+          {
+            name: "Direct",
+            type: "line",
+            stack: "Total",
+            areaStyle: {},
+            emphasis: {
+              focus: "series",
+            },
+            data: [320, 332, 301, 334, 390, 330, 320],
+          },
+          {
+            name: "Search Engine",
+            type: "line",
+            stack: "Total",
+            label: {
+              show: true,
+              position: "top",
+            },
+            areaStyle: {},
+            emphasis: {
+              focus: "series",
+            },
+            data: [820, 932, 901, 934, 1290, 1330, 1320],
+          },
+        ],
+      };
+
+      var ROOT_PATH =
+        "https://cdn.jsdelivr.net/gh/apache/echarts-website@asf-site/examples";
+
+      const weatherIcons = {
+        Sunny: ROOT_PATH + "/data/asset/img/weather/sunny_128.png",
+        Cloudy: ROOT_PATH + "/data/asset/img/weather/cloudy_128.png",
+        Showers: ROOT_PATH + "/data/asset/img/weather/showers_128.png",
+      };
+      option2 = {
+        title: {
+          text: "Weather Statistics",
+          subtext: "Fake Data",
+          left: "center",
+        },
+        tooltip: {
+          trigger: "item",
+          formatter: "{a} <br/>{b} : {c} ({d}%)",
+        },
+        legend: {
+          bottom: 10,
+          left: "center",
+          data: ["CityA", "CityB", "CityD", "CityC", "CityE"],
+        },
+        series: [
+          {
+            type: "pie",
+            radius: "65%",
+            center: ["50%", "50%"],
+            selectedMode: "single",
+            data: [
+              {
+                value: 1548,
+                name: "CityE",
+                label: {
+                  formatter: [
+                    "{title|{b}}{abg|}",
+                    "  {weatherHead|Weather}{valueHead|Days}{rateHead|Percent}",
+                    "{hr|}",
+                    "  {Sunny|}{value|202}{rate|55.3%}",
+                    "  {Cloudy|}{value|142}{rate|38.9%}",
+                    "  {Showers|}{value|21}{rate|5.8%}",
+                  ].join("\n"),
+                  backgroundColor: "#eee",
+                  borderColor: "#777",
+                  borderWidth: 1,
+                  borderRadius: 4,
+                  rich: {
+                    title: {
+                      color: "#eee",
+                      align: "center",
+                    },
+                    abg: {
+                      backgroundColor: "#333",
+                      width: "100%",
+                      align: "right",
+                      height: 25,
+                      borderRadius: [4, 4, 0, 0],
+                    },
+                    Sunny: {
+                      height: 30,
+                      align: "left",
+                      backgroundColor: {
+                        image: weatherIcons.Sunny,
+                      },
+                    },
+                    Cloudy: {
+                      height: 30,
+                      align: "left",
+                      backgroundColor: {
+                        image: weatherIcons.Cloudy,
+                      },
+                    },
+                    Showers: {
+                      height: 30,
+                      align: "left",
+                      backgroundColor: {
+                        image: weatherIcons.Showers,
+                      },
+                    },
+                    weatherHead: {
+                      color: "#333",
+                      height: 24,
+                      align: "left",
+                    },
+                    hr: {
+                      borderColor: "#777",
+                      width: "100%",
+                      borderWidth: 0.5,
+                      height: 0,
+                    },
+                    value: {
+                      width: 20,
+                      padding: [0, 20, 0, 30],
+                      align: "left",
+                    },
+                    valueHead: {
+                      color: "#333",
+                      width: 20,
+                      padding: [0, 20, 0, 30],
+                      align: "center",
+                    },
+                    rate: {
+                      width: 40,
+                      align: "right",
+                      padding: [0, 10, 0, 0],
+                    },
+                    rateHead: {
+                      color: "#333",
+                      width: 40,
+                      align: "center",
+                      padding: [0, 10, 0, 0],
+                    },
+                  },
+                },
+              },
+              { value: 735, name: "CityC" },
+              { value: 510, name: "CityD" },
+              { value: 434, name: "CityB" },
+              { value: 335, name: "CityA" },
+            ],
+            emphasis: {
+              itemStyle: {
+                shadowBlur: 10,
+                shadowOffsetX: 0,
+                shadowColor: "rgba(0, 0, 0, 0.5)",
+              },
+            },
+          },
+        ],
+      };
+
+      // 使用刚指定的配置项和数据显示图表。
+      myChart1.setOption(option1);
+      myChart2.setOption(option2);
+      window.addEventListener("resize", function () {
+        myChart1.resize();
+        myChart2.resize();
+      });
+    </script>
+    <script>
+      window.onload = function () {
+        animationNumber([
+          "totalPrice",
+          "totalOrder",
+          "monthsPrice",
+          "monthsOrder",
+        ]);
+        //animationNumber('monthsprice')
+      };
+
+      function animationNumber(elementarray, options) {
+        options = Object.assign({}, options, {
+          allTime: 3000,
+          speed: 50,
+        });
+        var allTime = options.allTime,
+          speed = options.speed;
+        if (elementarray instanceof Array) {
+          var oneNumArray = [],
+            elementidArray = [],
+            countArray = [],
+            valueOneArray = [];
+          for (var i = 0; i < elementarray.length; i++) {
+            var elementid = document.getElementById(elementarray[i]),
+              valueN = elementid.getAttribute("data-value"),
+              valueOne = 0;
+            if (valueN instanceof Array) {
+              valueOne = eval(valueN)[0];
+            } else {
+              valueOne = valueN;
+            }
+            valueOneArray[i] = valueOne;
+            oneNumber = Math.floor(valueOne / (allTime / speed)) || 1;
+            oneNumArray[i] = oneNumber;
+            elementidArray[i] = elementid;
+            countArray[i] = 0;
+          }
+          var datetime = setInterval(function () {
+            var countClear = 0;
+            for (var k = 0; k < elementidArray.length; k++) {
+              countArray[k] += oneNumArray[k];
+              if (countArray[k] >= valueOneArray[k]) {
+                countClear++;
+                countArray[k] = valueOneArray[k];
+              }
+              elementidArray[k].innerText = countArray[k];
+            }
+            if (countClear >= 4) {
+              clearInterval(datetime);
+            }
+          }, 30);
+        }
+        if (typeof elementarray === "string") {
+          var e = document.getElementById(elementarray),
+            allNum = eval(e.getAttribute("data-value"))[0]
+              ? eval(e.getAttribute("data-value"))[0]
+              : 0,
+            oneNumber = Math.floor(allNum / (allTime / speed)),
+            count = 0;
+          var datetime = setInterval(function () {
+            count += oneNumber;
+            if (count >= allNum) {
+              clearInterval(datetime);
+              count = allNum;
+            }
+            e.innerText = count;
+          }, 30);
+        }
+      }
+    </script>
+  </body>
+</html>

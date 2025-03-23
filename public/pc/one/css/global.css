@@ -1,0 +1,23 @@
+html,body{
+  min-width: 1400px;
+}
+body,ul,li,dl,p,h1,h2,h3,h4,img{
+  margin:0px;
+  padding:0px;
+  font-family: '微软雅黑';
+}
+img{
+  border:none;
+  display: block;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}

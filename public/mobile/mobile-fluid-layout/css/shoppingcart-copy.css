@@ -1,0 +1,385 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 13.333vw;
+  background-color: #0eb6ff;
+  color: #ffffff;
+}
+
+.header span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 4.267vw;
+}
+
+.header a {
+  float: right;
+  padding-right: 3.333vw;
+  margin-top: 4.4vw;
+  font-size: 3.733vw;
+  color: #ffffff;
+}
+
+.main {
+  margin-top: 17.067vw;
+  padding: 0 2.933vw 32.533vw 2.933vw;
+  min-height: 13.333vw;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  height: 10.667vw;
+  border-top-right-radius: 1.333vw;
+  border-top-left-radius: 1.333vw;
+  background-color: #fff;
+}
+
+.select {
+  padding: 0 3.067vw 0 3.467vw;
+}
+
+.selected {
+  width: 4.8vw;
+  height: 4.8vw;
+  line-height: 4.8vw;
+  text-align: center;
+  background-color: #0eb6ff;
+  border-radius: 50%;
+  font-size: 3.2vw;
+  color: #ffffff;
+}
+
+.mark span {
+  font-size: 3.733vw;
+  color: #101010;
+}
+
+/* select-communal start */
+
+.select-communal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.267vw;
+  height: 34.933vw;
+  padding: 4vw 3.733vw 4vw 2.267vw;
+  background-color: #fff;
+  line-height: 1;
+}
+
+.select-communal-img {
+  width: 25.067vw;
+  height: 21.6vw;
+}
+
+.select-communal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.select-communal-drec {
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.communal-drec-title {
+  font-size: 3.733vw;
+  color: #101010;
+}
+
+.communal-drec-info {
+  margin-top: 1.333vw;
+}
+
+.communal-drec-info span:nth-child(1) {
+  margin-right: 1.333vw;
+  padding: 0 1.2vw 0 0.8vw;
+  font-size: 3.2vw;
+  color: #ce5f41;
+  border: 0.267vw solid #ce5f41;
+  border-radius: 1.067vw;
+}
+
+.communal-drec-info span:nth-child(2) {
+  padding: 0 2vw 0 1.6vw;
+  font-size: 3.2vw;
+  color: #9d9e9d;
+  border: 0.267vw solid #9d9e9d;
+  border-radius: 1.067vw;
+}
+
+.communal-drec-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.communal-drec-price span {
+  font-size: 3.2vw;
+  font-family: Arial;
+  color: #ce5f41;
+}
+
+.communal-drec-price span i {
+  color: #101010;
+  font-style: normal;
+}
+
+.communal-drec-card {
+  border: 0.267vw solid #dce0e7;
+  border-radius: 1.067vw;
+}
+
+.communal-drec-card {
+  display: flex;
+  align-items: center;
+  width: 24.8vw;
+  height: 7.467vw;
+}
+
+.communal-drec-card li {
+  height: 100%;
+  flex: 1;
+  border-right: 0.267vw solid #dce0e7;
+  text-align: center;
+  line-height: 6.667vw;
+  font-size: 6.667vw;
+  color: #e0e0e2;
+}
+
+.communal-drec-card li:nth-child(2) {
+  flex: 0 1 auto;
+  width: 9.867vw;
+  font-size: 3.2vw;
+  color: #101010;
+}
+
+.communal-drec-card li:nth-child(3) {
+  border-right: 0.267vw solid transparent;
+}
+
+.communal-drec-num {
+  font-size: 3.2vw;
+  color: #9d9e9d;
+  margin-top: 2.4vw 0 3.2vw 0;
+}
+
+/* main-recommend start */
+
+.recommend-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13.867vw;
+}
+
+.recommend-title div {
+  width: 7.467vw;
+  height: 0.8vw;
+  background-color: #e6e6e6;
+}
+
+.recommend-title span {
+  font-size: 3.2vw;
+  color: #0eb6ff;
+  margin: 0 2.4vw;
+}
+
+.main-recommend-content {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+/* recommend-content-communal start */
+
+.recommend-content-communal {
+  display: flex;
+  flex-flow: column;
+  margin-top: 2.667vw;
+  width: 45.6vw;
+  padding: 2.4vw 2.933vw 4.4vw;
+  background-color: #fff;
+  line-height: 1;
+  box-shadow: 0vw 0.8vw 1.333vw 0vw rgba(0, 0, 0, 0.2);
+  border-radius: 1.067vw;
+}
+
+.communal-img {
+  width: 39.467vw;
+  height: 34.133vw;
+  margin-top: 2.4vw;
+}
+
+.communal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.communal-title {
+  margin-top: 1.6vw;
+  font-size: 3.733vw;
+  color: #101010;
+}
+
+.communal-drec {
+  margin-top: 4vw;
+}
+
+.communal-drec span:nth-child(1) {
+  margin-right: 1.333vw;
+  height: 4.8vw;
+  line-height: 4.8vw;
+  padding: 0 1.2vw 0 0.8vw;
+  border: 0.267vw solid #ce5f41;
+  border-radius: 1.067vw;
+  font-size: 3.2vw;
+  color: #ce5f41;
+}
+
+.communal-drec span:nth-child(2) {
+  height: 4.8vw;
+  line-height: 4.8vw;
+  padding: 0 2vw 0 1.6vw;
+  border: 0.267vw solid #9d9e9d;
+  border-radius: 1.067vw;
+  font-size: 3.2vw;
+  color: #9d9e9d;
+}
+
+.communal-price {
+  display: flex;
+  align-items: center;
+  font-size: 3.2vw;
+  margin-top: 1.067vw;
+}
+
+.communal-price span:nth-child(1) i {
+  font-style: normal;
+  color: #ce5f41;
+}
+
+.communal-price span:nth-child(1) i:nth-child(2) {
+  font-size: 2.133vw;
+}
+
+.communal-price span:nth-child(1) i:nth-child(3) {
+  color: #101010;
+}
+
+.communal-price span:nth-child(2) {
+  margin: 0 6.8vw 0 2.4vw;
+  color: #9d9e9d;
+}
+
+.communal-price span:nth-child(3) {
+  display: inline-block;
+  width: 5.867vw;
+  height: 5.867vw;
+  border-radius: 50%;
+  line-height: 5.867vw;
+  text-align: center;
+  background-color: #0eb6ff;
+  font-size: 3.2vw;
+  color: #fff;
+}
+
+/* menoy start */
+
+.money {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 13.867vw;
+  height: 16vw;
+  width: 100%;
+  background-color: #fff;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  margin-left: 5.333vw;
+}
+
+.all .yuan {
+  width: 3.733vw;
+  height: 3.733vw;
+  border: 0.267vw solid #101010;
+  margin-right: 2.8vw;
+  border-radius: 50%;
+}
+
+.all span {
+  font-size: 3.733vw;
+  color: #101010;
+}
+
+.money .howmuch {
+  margin: 0 13.467vw 0 5.067vw;
+  font-size: 3.733vw;
+  font-weight: bold;
+  color: #101010;
+}
+
+.money .num {
+  width: 29.333vw;
+  height: 10.667vw;
+  line-height: 10.667vw;
+  text-align: center;
+  background: #0eb6ff;
+  border-radius: 5.333vw;
+  font-size: 3.733vw;
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+/* footer start */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9.333vw;
+  width: 100%;
+  height: 13.333vw;
+  background-color: #fff;
+}
+
+.footer a {
+  display: flex;
+  flex-flow: column;
+  color: #9d9e9d;
+  align-items: center;
+}
+
+.footer a.active .icon,
+.footer a.active .title {
+  color: #0eb6ff;
+}
+
+.footer a .icon {
+  font-size: 5.733vw;
+}
+
+.footer a .title {
+  margin-top: -0.667vw;
+  font-size: 3.2vw;
+  color: #9d9e9d;
+  line-height: 1;
+}

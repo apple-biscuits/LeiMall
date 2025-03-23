@@ -1,0 +1,1100 @@
+
+/*qq音乐导航*/
+.menu-fixed{
+  width:100%;
+  height:85px;
+  background-color: #fff;
+  z-index: 222;
+}
+.menu{
+  height:85px; 
+  width:1200px;
+  margin:0px auto;
+}
+.menu h1{
+  float: left;
+  width:200px;
+  line-height: 85px;
+  
+}
+.menu h1 a{
+  display: block;
+  height:85px;
+  box-sizing: border-box;
+  padding-top:19px;
+  
+}
+.menu  h1 img.logo{
+  display: block;
+}
+.menu .menu-list{
+  float: left;
+  width:800px;
+}
+.menu .menu-list li{
+  float: left;
+  line-height: 85px;
+  position: relative;
+}
+.menu .menu-list li a{
+  display: block;
+  padding:0px 20px;
+  font-size: 18px;
+  color:#000;
+  position: relative;
+}
+.menu .menu-list li a:hover{
+  color:#31c27c;
+}
+.menu .menu-list li.active a{
+  background-color: #31c27c;
+  color:#fff;
+}
+.menu .menu-list li a img.mark1{
+  width:37px;
+  position: absolute;
+  top:15px;
+  right:0px;
+}
+
+.menu-list .menu-detail{
+  display: none;
+    width:160px;
+    box-shadow: 0 0 3px #666;
+    -moz-box-shadow: 0 0 3px #666;
+    -webkit-box-shadow: 0 0 3px #666;
+    box-sizing: border-box;
+    padding:10px 10px 15px 15px;
+    position: absolute;
+    left:14px;
+    top:60px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #fff;
+    z-index:99;
+}
+.menu-list .menu-detail p{
+  line-height:30px;
+  font-size: 12px;
+  color:#000;
+  margin-bottom:5px;
+}
+.menu-list .menu-detail p i.icon{
+    width:20px;
+    height:20px;
+    display: inline-block;
+    background-image: url('../images/ico.png');
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    position: relative;
+    top:2px;
+}
+i.icon__hq{
+  background-position: 0px 0px;
+}
+i.icon__dts{
+  background-position: 0px -30px;
+}
+i.icon__skin{
+  background-position: 0px -60px;
+}
+
+.menu-list .menu-detail p a.download{
+  width:64%;
+  height:25px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  text-align: center;
+  line-height:25px;
+  color:#fff;
+  background-color:#31c27c ;
+  background-image: linear-gradient(
+    90deg,#24ccaa,#31c27c);
+    font-size: 12px; 
+    margin:0px auto;
+}
+
+.menu-list .menu-detail p a.download:hover{
+  background-image: linear-gradient(
+    90deg,#31c27c,#31c27c);
+}
+
+.menu-list li.client:hover .menu-detail{
+  display: block;
+}
+
+/*小米轮播图和二级菜单*/
+.xiaomi{
+  width:100%;
+  height:460px;
+  overflow: hidden; 
+
+}
+.xiaomi .scroll{
+  margin:0px auto;
+  height:460px;
+  position: relative;
+  width:100%;
+}
+
+.swiper-slide {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.swiper-slide.b1{
+  background-image: url('../images/meizu2/xm1.jpg');
+  z-index: 3;
+}
+.swiper-slide.b2{
+  background-image: url('../images/meizu2/xm2.jpg');
+
+}
+.swiper-slide.b3{
+  background-image: url('../images/meizu2/xm3.jpg');
+}
+.swiper-slide.b4{
+  background-image: url('../images/meizu2/xm4.jpg');
+}
+
+
+/* .swiper-container .swiper-button-next, .swiper-container .swiper-button-prev{
+  width: 41px;
+  height: 69px;
+  background-size: 41px 69px;
+}
+.swiper-container .swiper-button-prev {
+  left: 14%;
+  background-image: url(../images/meizu2/icon-slides-left-transparent.png);
+}
+.swiper-container .swiper-button-prev:hover {
+  background-image: url(../images/meizu2/icon-slides-left.png);
+}
+.swiper-container .swiper-button-next {
+  right: 14%;
+  background-image: url(../images/meizu2/icon-slides-right-transparent.png);
+}
+.swiper-container .swiper-button-next:hover {
+  background-image: url(../images/meizu2/icon-slides-right.png);
+}
+
+body .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: 30px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #31c27c;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+} */
+
+
+.pagination {
+  position: absolute;
+  z-index: 20;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 8px;
+  background: #fff;
+  margin: 0 5px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.swiper-active-switch {
+  background: #31c27c;
+}
+.swiper-container{
+  position: relative;
+}
+.arrow-left,.arrow-right{
+  position: absolute;
+  width: 41px;
+  height: 69px;
+  display: block;
+  background-size: 41px 69px;
+  margin-top: -35px;
+}
+.arrow-left {
+  top: 50%;
+  left:14%;
+  background-image: url(../images/meizu2/icon-slides-left-transparent.png);
+}
+.arrow-left:hover {
+  background-image: url(../images/meizu2/icon-slides-left.png);
+}
+.arrow-right {
+  top: 50%;
+  right: 14%;
+  background-image: url(../images/meizu2/icon-slides-right-transparent.png);
+}
+.arrow-right:hover {
+  background-image: url(../images/meizu2/icon-slides-right.png);
+}
+
+/*QQ音乐*/
+.music-recommend{
+  background:url('../images/music/music-bg.png') repeat-x;
+  padding:50px 0px;
+}
+.music-con{
+  width:1200px;
+  margin:0px auto;
+}
+
+.music-con h3.title{
+  width:196px;
+  height:30px;
+  background-image: url('../images/music/index-title.png');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  margin:0px auto;
+}
+.music-con .tab{
+  text-align: center;
+  padding:34px 0px; 
+}
+.music-con .tab a{
+  padding:0px 23px;
+  font-size: 15px;
+  color:#333;
+}
+.music-con .tab a.current{
+  color: #31c27c;
+}
+.music-con .tab a:hover{
+  color:#31c27c;
+}
+.music-con .music-item ul.music-list li{
+  width:224px;
+  float:left;
+  margin:0px 8px;
+  font-size: 14px;
+}
+.music-con .music-item ul.music-list li a.item{
+  display: block;
+  width:224px;
+  height:224px;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-con .music-item ul.music-list li a.item img{
+  display: block;
+  transition: ease all .5s ;
+  -moz-transition: ease all .5s ;
+  -webkit-transition: ease all .5s ;
+  -o-transition: ease all .5s ;
+}
+.music-con .music-item ul.music-list li a.item:hover img{
+  transform: scale(1.1); 
+  -moz-transform: scale(1.1); 
+  -webkit-transform: scale(1.1); 
+  -o-transform: scale(1.1); 
+  -ms-transform: scale(1.1); 
+}
+.music-con .music-item ul.music-list li a.item:hover .img-mask{
+  background-color:rgba(0,0,0,0.3);
+}
+.music-con .music-item ul.music-list li a.item:hover img.play-button{
+  opacity: 1;
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+}
+
+.img-mask{
+  display: block;
+  width:224px;
+  height:224px;
+  background-color:rgba(0,0,0,0);
+  transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+img.play-button{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin:-35px 0px 0px -35px;
+  opacity: 0;
+  transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -webkit-transform: scale(0.3);
+  -o-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+}
+.music-con .music-item ul.music-list{
+  display: none;
+}
+.music-con .music-item ul.current{
+  display: block;
+}
+.music-con .music-item ul.music-list li p{
+  padding:10px 0px 5px 0px;
+  
+}
+.music-con .music-item ul.music-list li p a{
+  color:#000;
+ 
+}
+
+.music-con .music-item ul.music-list li p a:hover{
+  color:#31c27c;
+}
+.music-con .music-item ul.music-list li span{
+  color:#999;
+}
+
+/*宜家家居*/
+.gallery{
+  width:1240px;
+  margin:0px auto;
+}
+
+.gallery-header .gallery-header-l{
+  float: left;
+  width:830px;
+}
+.gallery-header .gallery-header-l h3{
+  font-size: 24px;
+  line-height:2.5;
+}
+.gallery-header .gallery-header-l p{
+  font-size: 14px;
+  line-height: 1.5;
+  color:#484848;
+}
+.gallery-header .gallery-header-r{
+  width:120px;
+  float:right;
+}
+
+.gallery-header .gallery-header-r a{
+  display:block;
+  font-size: 14px;
+  height:40px;
+  line-height: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  text-align: center;
+  position: relative;
+  border:1px solid #ddd;
+  top:30px;
+  background-color: #fff;
+  color:#000;
+}
+.gallery-header .gallery-header-r a:hover{
+  border:1px solid #000;
+}
+.gallery .gallery-content{
+  margin:30px 0px;
+}
+.gallery-l{
+  width:610px;
+  height:715px;
+  float: left;
+  margin-right:20px;
+  /* background: no-repeat url('../images/yijia/y1.jpg'); */
+  background-size: cover;
+  position: relative;
+}
+.gallery-m{
+  width:295px;
+  height:715px;
+  float: left;
+  
+}
+.gallery-m1{
+  width:295px;
+  height:295px;
+  /* background: no-repeat url('../images/yijia/y2.jpg'); */
+  background-size: cover;
+  position: relative;
+}
+.gallery-m2{
+  width:295px;
+  height:400px;
+  /* background: no-repeat url('../images/yijia/y3.jpg'); */
+  background-size: cover;
+  position: relative;
+}
+.gallery-r{
+  width:295px;
+  height:715px;
+  float: right;
+}
+.gallery-r1{
+  width:295px;
+  height:400px;
+  /* background: no-repeat url('../images/yijia/y4.jpg'); */
+  background-size: cover;
+}
+
+.gallery-r2{
+  width:295px;
+  height:295px;
+  /* background: no-repeat url('../images/yijia/y5.jpg'); */
+  background-size: cover;
+}
+.r20{
+  margin-right:20px;
+}
+.b20{
+  margin-bottom:20px;
+}
+.gallery-l:hover .dot,.gallery-m1:hover .dot ,.gallery-m2:hover .dot{
+  display: block;
+}
+
+.dot{
+  display: none;
+  width:52px;
+  height:32px;
+  position: absolute;
+}
+.dot-pos1{
+  left:248px;
+  top:250px;
+}
+.dot-pos2{
+  left:128px;
+  top:360px;
+}
+.dot-pos3{
+  left:70px;
+  top:460px;
+}
+.dot-pos4{
+  left:50px;
+  top:130px;
+}
+.dot-pos5{
+  left:60px;
+  top:250px;
+}
+
+.dot::after{
+  content: "";
+  display: block;
+  width:12px;
+  height:12px;
+  background-color: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  position: absolute;
+  top:10px;
+  left:10px;
+  transition: ease all 0.5s;
+ -moz-transition: ease all 0.5s;/* Firefox 4 */
+  -webkit-transition: ease all 0.5s; /* Safari and Chrome */
+  -o-transition: ease all 0.5s;/* Opera */ 
+
+}
+.dot::before{
+  content: "";
+  display: block;
+  width:32px;
+  height:32px;
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+
+}
+
+.dot:hover::before{
+  transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  box-shadow: 0px 0px 5px #fff;
+  -moz-box-shadow: 0px 0px 5px #fff;
+  -webkit-box-shadow: 0px 0px 5px #fff;
+}
+.dot:hover::after{
+  transform:scale(0.7);
+  -ms-transform:scale(0.7);
+  -moz-transform:scale(0.7);
+  -webkit-transform:scale(0.7);
+  -o-transform:scale(0.7);
+}
+
+.dot .dot-item{
+  background-color: #FFF;
+  padding:10px;
+  position: absolute;
+  left:40px;
+  top:-30px;
+  display: none;
+}
+.dot .dot-item h3{
+  font-size: 14px;
+  color:#000;
+}
+.dot .dot-item p{
+  font-size: 14px;
+  color:#484848;
+}
+.dot .dot-item span{
+  font-size: 24px;
+  color:#000;
+  font-weight: bold;
+}
+.dot .dot-item span i{
+  font-size: 12px;
+}
+.dot:hover .dot-item{
+  display: block;
+}
+
+.w150{
+  width:150px;
+}
+.w100{
+  width:100px;
+}
+
+
+.meizu-video{
+  background-color: #f8f8f8;
+  padding:30px 0px;
+}
+
+.meizu-video .meizu-content{
+  width: 1240px;
+  margin:0px auto;
+}
+
+.meizu-video .meizu-content h3.title{
+  font-size: 28px;
+  line-height: 2;
+  text-align: center;
+  padding-bottom:20px;
+
+}
+.meizu-video .meizu-content ul{
+}
+
+.meizu-video .meizu-content ul li{
+  width:303px;
+  height:245px;
+  float: left;
+  margin:0px 4px 0px 3px;
+  margin-bottom:10px;
+}
+.meizu-video .meizu-content ul li img{
+  display: block;
+  
+}
+.meizu-video .meizu-content ul li a{
+  display: block;
+  position: relative;
+  transition: ease all 0.5s;
+  -moz-transition: ease all 0.5s;
+  -webkit-transition: ease all 0.5s;
+  -o-transition: ease all 0.5s;
+}
+.meizu-video .meizu-content ul li a span.icon-play{
+  width:30px;
+  height: 30px;
+  background-image: url('../images/meizu/mz-play.png');
+  background-size: cover;
+  position: absolute;
+  right:15px;
+  bottom:70px;
+}
+.meizu-video .meizu-content ul li a:hover{
+  box-shadow: 5px 5px 10px #ddd;
+  -moz-box-shadow: 5px 5px 10px #ddd;
+  -webkit-box-shadow: 5px 5px 10px #ddd;
+  display: block;
+}
+
+.meizu-video .meizu-content ul li p{
+  height:55px;
+  line-height: 55px;
+  color:#000;
+  text-align: center;
+  background-color:#fff;
+}
+.meizu-mask{
+  position: fixed;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top:0px;
+  left:0px;
+  display: none;
+  z-index:9999;
+}
+
+.meizu-mask .mask-video{
+  width:1200px;
+  position: absolute;
+  left:50%;
+  margin-left:-600px;
+  top:50%;
+  margin-top:-300px;
+}
+.meizu-mask span.close{
+  display:block;
+  width:50px;
+  height:50px;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  color:#000;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  right:10px;
+  top:10px;
+  cursor: pointer;
+}
+
+/*华为样式*/
+
+.hw-recommend h2 {
+  position: relative;
+  font-size: 34px;
+  color: #333;
+  text-align: center;
+  margin: 40px 0;
+}
+.hw-recommend h2::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: #c7000b;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  bottom: -10px;
+}
+
+.hw-recommend {
+  width: 1240px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom:30px;
+
+}
+
+.hw-recommend ul {
+  list-style: none;
+  width:1240px;
+}
+.hw-recommend ul li {
+  position: relative;
+  float: left;
+  margin:0px 6px 30px 7px;
+  overflow: hidden;
+}
+.hw-recommend ul li a {
+  text-decoration: none;
+}
+.hw-recommend ul li a .info {
+  position: absolute;
+  bottom: -38px;
+  left: 20px;
+  z-index: 1;
+  /* 文字整体向上移动 过渡动画 */
+  transition: bottom 0.4s ease 0s;
+  -moz-transition: bottom 0.4s ease 0s;
+  -webkit-transition: bottom 0.4s ease 0s;
+  -o-transition: bottom 0.4s ease 0s;
+}
+.hw-recommend ul li a:hover .info{
+  bottom: 20px;
+}
+
+
+.hw-recommend ul li a .info span {
+  font-size: 14px;
+  color: #fff;
+}
+.hw-recommend ul li a .info .title {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.hw-recommend ul li a .info .more {
+  padding: 18px 0;
+}
+.hw-recommend ul li a .info .more span{
+  font-size: 16px;
+}
+
+.hw-recommend ul li a .info .more i{
+  margin-left: 0px;
+  /* 了解更多右边三角形向右移动 过渡动画 */
+  transition: margin-left .3s ease 0s;
+  -moz-transition: margin-left .3s ease 0s;
+  -webkit-transition: margin-left .3s ease 0s;
+  -o-transition: margin-left .3s ease 0s;
+}
+.hw-recommend ul li a .info .more:hover i{
+  margin-left: 5px;
+}
+
+
+/* 滑动，阴影效果 */
+.hw-recommend ul li a .shadow {
+  width: 100%;
+  height: 340px;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: 0;
+  /* 阴影过渡动画 */
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+  -moz-transition: opacity 1s ease 0s;
+  -webkit-transition: opacity 1s ease 0s;
+  -o-transition: opacity 1s ease 0s;
+}
+
+.hw-recommend ul li a:hover .shadow {
+  opacity: 1;
+}
+
+
+/* 图片放大 过渡动画 */
+.hw-recommend ul li a img{
+  transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transition: transform 0.6s ease 0s;
+  -moz-transition: transform 0.6s ease 0s;
+  -webkit-transition: transform 0.6s ease 0s;
+  -o-transition: transform 0.6s ease 0s;
+}
+.hw-recommend ul li a:hover img {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+
+
+/*360图片展示-手风琴效果*/
+.show-image{
+  padding-top:40px;
+  width:100%;
+  background:url('../images/music/music-bg.png') repeat-x;
+}
+.show-image-con{
+  width:1364px;
+  margin:0px auto;
+}
+.show-image-con h3{
+  text-align: center;
+  margin:20px 0px 50px 0px;
+}
+.show-image-con h3 img{
+  width:150px;
+  margin:0px auto;
+}
+.show-image-con ul li{
+  height:300px;
+  width:190px;
+  float:left;
+  overflow: hidden;
+  margin-right:2px;
+  position: relative;
+}
+.show-image-con ul li.current{
+  width:400px;
+}
+.show-image-con ul li.current h4{
+  bottom:0px;
+}
+
+.show-image-con ul li h4{
+  position: absolute;
+  left:0px;
+  bottom:-100px;
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0),rgba(0,0,0,0.4) 90%,rgba(0,0,0,0));
+  color:#fff;
+  font-weight: 400;
+  width:100%;
+  height:60px;
+  line-height: 60px;
+  padding-top:40px;
+  text-indent: 1em;
+
+}
+
+/**
+图片画廊效果
+*/
+
+.image-gallery{
+  margin-top:60px;
+  /* background:url('../images/music/music-bg.png') repeat-x; */
+  padding:50px 0px 40px 0px;
+  height:687px ;
+  background-color: #000;
+  overflow: hidden;
+  width:100%;
+  position: relative;
+}
+.image-gallery .gallery-scroll{
+  width:4000%;
+  background-color: #fff;
+  position: absolute;
+  left:0px;
+}
+.image-gallery .gallery-scroll .scroll-item {
+  width:1507px;
+  float: left;
+}
+.image-gallery .gallery-scroll .scroll-item  .item-l{
+  width:789px; 
+  height:627px;
+  float: left;
+}
+.image-gallery .gallery-scroll .scroll-item  .item-r{
+  width:718px;
+  height:627px;
+  float:right;
+}
+.item-r .nav{
+  width:295px;
+  background-color:thistle;
+  height: 207px;
+  float: left;
+  font-size: 30px;
+  text-align: center;
+  line-height: 207px;
+  color:#fff;
+}
+.image-gallery .gallery-scroll .scroll-item img{
+  float: left;
+}
+.mr2{
+  margin-right:2px;
+}
+.mb2{
+  margin-bottom:2px;
+}
+
+.scrollbar-track{
+  width:1200px;
+  height:20px;
+  background-color:rgba(255,255,255,0.5);
+  border-radius: 10px;
+  position: absolute;
+  left:50%;
+  margin-left:-600px;
+  bottom:40px;
+}
+.scrollbar-track .scrollbar-thumb{
+  position: absolute;
+  left:3px;
+  top:3px;
+  height:14px;
+  background-color: white;
+  width:50px;
+  border-radius: 10px;
+  cursor: move;
+}
+
+.footer{
+  height:50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: #999;
+}
+
+ /* 了解更多 字体图标 */
+ @font-face {
+  font-family: 'iconfont';
+  src: url('../images/huawei/fonts/iconfont.woff2?t=1638794933894') format('woff2'),
+   url('../images/huawei/fonts/iconfont.woff?t=1638794933894') format('woff'),
+   url('../images/huawei/fonts/iconfont.ttf?t=1638794933894') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 18px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #c7000b;
+}
+
+.louti{
+  width:60px;
+  position: fixed;
+  top:200px;
+  left:100px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  z-index: 3;
+  background-color: #fff;
+
+}
+.louti h3{
+  padding: 10px 0px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px 4px 0px 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  background-color: #fe6397;
+  color:#fff;
+}
+.louti ul{
+  border:1px solid #ddd;
+  border-bottom:none;
+  
+}
+.louti ul li{
+  /* padding:0px 10px; */
+  /* margin:0px 2px; */
+  text-align: center;
+  color:#fff; 
+  padding-bottom:5px;
+  border-bottom:1px solid #ddd;
+  cursor: pointer;
+}
+.louti ul li i{
+  display: block;
+  line-height: 25px;
+  font-size: 20px;
+  height:25px; 
+  text-align: center;
+  color:#fe6397;
+  font-weight: bold;
+}
+.louti ul li p{
+  line-height: 16px;
+  font-size: 14px;
+  color:#666;
+  
+}
+
+.louti ul li.current{
+  background-color: #fe6397;
+}
+.louti ul li.current i{
+  color:#fff;
+}
+.louti ul li.current p{
+  color: #fff;
+}
+
+/*右侧工具栏*/
+.tool-bar{
+  width:85px;
+  border:1px solid #f5f5f5;
+  position:fixed;
+  right:0px;
+  bottom:200px;
+  z-index: 22;
+  
+  
+}
+.tool-bar ul{
+  position: relative;
+}
+.tool-bar ul li{
+  width:85px;
+  height:85px;
+  text-align: center;
+  border-bottom:1px solid #f5f5f5;
+  position: relative;
+  background-color: #fff;
+
+}
+.tool-bar ul li i{
+  display: block;
+  height:50px;
+  line-height: 50px;
+  font-size: 26px;
+  color: #484848;
+}
+.tool-bar ul li p{
+  font-size: 14px;
+  color: #484848;
+}
+
+.tool-bar ul li:hover i,.tool-bar ul li:hover p{
+  color: #fe6397;
+}
+.tool-bar ul li .bar-img{
+  padding:10px 0px;
+  width:180px;
+  height:180px;
+  position: absolute;
+  left:-180px;
+  top:0px;
+  box-shadow: 0px 0px 5px #ddd;
+  display:none;
+  z-index: 3333;
+}
+.tool-bar ul li:hover .bar-img{
+  display: block;
+  background-color: #fff;
+}
+.tool-bar ul li.to-top{
+  cursor: pointer;
+  position: absolute;
+  background-color: #ddd;
+  left:0px;
+  bottom:-105px;
+  color:#fff;
+  display: none;
+}
+
+.tool-bar ul li .bar-img h3{
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.tool-bar ul li .bar-img img{
+  display: block;
+  margin: 0px auto;
+}
+.tool-bar ul li .bar-img p{
+  line-height:30px;
+}

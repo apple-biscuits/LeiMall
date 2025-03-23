@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="list"></div>
+    </div>
+    <script>
+        //防抖函数
+        function debounce(fn, delay) {
+            let timer = null;
+            return function (...arguments) {
+                if (timer) clearTimeout(timer);
+                timer = setTimeout(() => {
+                    fn.apply(this, arguments);
+                }, delay);
+            }
+        }
+
+        //节流函数
+        function throttle(fn, delay) {
+            let timer = null;
+            return function (...arguments) {
+                if (!timer) {
+                    timer = setTimeout(() => {
+                        fn.apply(this, arguments);
+                        timer = null;
+                    }, delay);
+                }
+            }
+        }
+    </script>
+    <style>
+        .container {
+            width: 100px;
+            height: 500px;
+            border: 1px solid red;
+            overflow-y: auto;
+        }
+
+        .list {
+            width: 80px;
+            height: 800px;
+            border: 1px solid blue;
+        }
+    </style>
+</body>
+
+</html>

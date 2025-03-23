@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 24px/1.5 MicrosoftYaHei;
+    background-color: #F5F5F5;
+}
+
+input {
+    border: none;
+}
+
+i {
+    font-style: normal;
+}

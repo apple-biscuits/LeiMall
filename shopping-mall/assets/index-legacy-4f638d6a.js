@@ -1,0 +1,1 @@
+System.register([],(function(e,t){"use strict";return{execute:function(){var e=document.createElement("style");e.textContent=":root{--van-sticky-z-index: 99}.van-sticky--fixed{position:fixed;z-index:var(--van-sticky-z-index)}\n",document.head.appendChild(e)}}}));
